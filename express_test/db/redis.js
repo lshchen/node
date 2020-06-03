@@ -1,5 +1,5 @@
 const redis = require('redis');
-const { redisConfig } = require('../../../express_test/utils/db');
+const { redisConfig } = require('../utils/db');
 const redisClient = redis.createClient(redisConfig.port, redisConfig.host);
 redisClient.on('error',err=>{
     console.error(err);

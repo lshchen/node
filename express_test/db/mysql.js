@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const { config } = require('../../../express_test/utils/db');
+const { config } = require('../utils/db');
 const con = mysql.createConnection(config);
 con.connect();
 function exec(sql) {
